@@ -26,3 +26,29 @@ $nbTweets = countTweets($db, $id);
 <p>Nombre de tweets : <?php echo $nbTweets; ?></p>
 <p>Creation du profil :  <?php echo date('d-m-Y H:i:s', strtotime($created_at)); ?></p>
 <p>Derniere connexion :  <?php echo date('d-m-Y H:i:s', strtotime($last_login)); ?></p>
+
+
+/*
+
+la function : getTweetFromUser viens de tweet.fn, c'est pour que je l'ai ecrit, mais jme suis gourée dans l'algo,
+donc à rectifier,
+
+l'idée est d'afficher tout les tweet du profil courant
+
+*/
+
+<?php
+foreach(getTweetFromUser($db,$user['id']) AS $tweet){
+
+
+	echo '<li>'.$tweet['tweet'].' ';
+		echo date('d-m-Y \à\ H:i:s', strtotime($tweet['created_at']));
+		if($tweet['author_id'] == $_SESSION['id']){
+			// Affichage de modifier et supprimer
+			echo ' | <a href="edit.php?id='.$tweet['id'].'">Modifier</a> | ';
+			echo '<a href="delete.php?id='.$tweet['id'].'">Supprimer</a>';
+		}
+		echo '</li>';
+	}
+?>
+

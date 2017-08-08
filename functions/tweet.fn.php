@@ -22,8 +22,20 @@ function getTweet($db, $tweet_id){
 	$req->execute(array(
 		':id'	=>	$tweet_id
 	));
-	return $req->fetch();
+	return $req->fetch(); 
+	//return $row = $req->fetchAll();
 }
+
+function getTweetFromUser($db, $user_id){
+	$req = $db->prepare('SELECT * FROM tweets WHERE author_id = :id');
+	$req->execute(array(
+		':id'	=>	$user_id
+	));
+	//return $req->fetch(); 
+	return $row = $req->fetchAll();
+}
+
+
 
 function updateTweet($db, $tweet_id, $newTweet){
 	$req = $db->prepare('UPDATE tweets SET tweet = :newTweet WHERE id = :tweetId');
