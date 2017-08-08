@@ -27,7 +27,7 @@ if(isset($_POST['tweet'])){
 <?php 
 	foreach(showAllTweets($db) AS $tweet){
 		echo '<li>'.$tweet['tweet'];
-		echo ' - <a href="profile.php?id=';
+		echo ' - <a href="profil.php?id=';
 		echo $tweet['id'];
 		echo '">';
 		echo $tweet['username'];
