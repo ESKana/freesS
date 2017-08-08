@@ -1,0 +1,320 @@
+body {
+	background-color: #E9E9E9;
+}
+
+input:focus {
+  outline: none;
+}
+
+.mgtop20 {
+	margin-top: 20px;
+}
+
+#logbox {
+	padding: 40px;
+	background-color: #3498db;
+	color: white;
+}
+
+#logbox.register {
+	background-color: #1abc9c;
+}
+
+#logbox h1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+#logbox .form-input,
+#logbox .form-submit {
+	padding: 10px 0;
+}
+
+#logbox .form-input input[type="text"],
+#logbox .form-input input[type="password"] {
+	width: 100%;
+	border: transparent;
+	padding: 10px 0 10px 40px;
+	background-color: rgba(255,255,255,.2);
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#logbox .form-input input:focus {
+	background-color: rgba(255,255,255,.5);
+	transition:all 0.3s linear;
+}
+
+#logbox .form-input .username,
+#logbox .form-input .password,
+#logbox .form-input .email {
+	position: relative;
+}
+
+#logbox .form-input .username:before,
+#logbox .form-input .password:before,
+#logbox .form-input .email:before {
+	position: relative;
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	z-index: 1000;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+#logbox .form-input .username:before {
+	content: "\f007";
+}
+
+#logbox .form-input .password:before {
+	content: "\f023";
+}
+
+#logbox .form-input .email:before {
+	content: "\f0e0";
+}
+
+#logbox .form-submit input[type="submit"] {
+	display: block;
+	background: transparent;
+	border: none;
+	width: 100%;
+	font-size: 11px;
+	text-transform: uppercase;
+	background-color: #34495e;
+	border-bottom: 5px solid #2c3e50;
+	padding: 10px;
+}
+
+#logbox.register .form-submit input[type="submit"] {
+	background-color: #16a085;
+	border-bottom: 5px solid #137f6a;	
+}
+
+#logbox .form-submit input[type="submit"]:active {
+	margin-top: 3px;
+	border-bottom: 2px solid #2c3e50;
+	transition:all 0.1s linear;
+}
+
+#success, 
+#error {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#success {
+	color: #2ecc71;
+}
+
+#error {
+	color: #e74c3c;
+}
+
+.back-btn {
+	color: rgba(255,255,255,.6);
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 11px;
+	transition:all 0.2s linear;
+}
+
+.back-btn:hover {
+	color: white;
+	text-decoration: none;
+}
+
+p.account {
+	color: rgba(255,255,255,.7)
+}
+
+p.account a {
+	color: white;
+}
+
+
+#tweetbox {
+	background-color: #3498db;
+	padding: 20px 0;
+}
+
+.logo {
+	color: rgba(255,255,255,.7);
+	font-size: 34px;
+	line-height: 1;
+}
+
+.logo:hover {
+	color: white;
+}
+
+#tweetbox h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+#tweetbox input {
+	width: 100%;
+	display: block;
+	padding:10px;
+	border: none;
+	color: #999;
+}
+
+#tweetbox form {
+	position: relative;
+}
+
+#tweetbox button {
+	border: none;
+	background-color: #2980b9;
+	float: right;
+	line-height: 38px;
+	color:white;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+#tweetfeed h1{
+	margin:0;
+	padding:0;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #CCC;
+}
+
+.tweet {
+	padding: 30px;
+	background-color: white;
+	margin-top: 20px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tweet b {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.tweet .author img {
+	display: inline-block;
+	max-width: 100%;
+	border-radius: 100%;
+}
+
+.tweet p.content {
+	color: #646464;
+	margin-bottom: 0;
+}
+
+.tweet .date {
+	color: #999;
+}
+
+.tweet .actionicon a{
+	color: #999;
+}
+
+.tweet .actionicon a:hover{
+	color: #545251;
+}
+
+.tweet textarea {
+	display: block;
+	width: 100%;
+	background-color: #F4F4F4;
+	border: none;
+	padding:10px;
+}
+
+.tweet .valid {
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	background-color: #2ecc71;
+}
+
+#userbox {
+	margin-top: 20px;
+}
+
+#userbox .content {
+	background-color: #FFF;
+	padding: 40px 0;
+	color: #545251;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 0.4em 0.4em 0 0;
+}
+
+#userbox .author img {
+	max-width: 90px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+#userbox .username {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#userbox .created_at {
+	color: #999;
+	text-transform: uppercase;
+	font-size: 9px;
+}
+
+#userbox .created_at span {
+	color: #545251;
+	font-size: 11px;
+}
+
+#userbox .logout {
+	display: block;
+	background-color: #e74c3c;
+	color: #FFF;
+	line-height: 40px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 0 0 0.4em 0.4em;
+}
+
+#userbox .logout:hover {
+	background-color: #e74c3c;
+	text-decoration: none;
+}
