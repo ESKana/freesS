@@ -1,12 +1,14 @@
--
--
--
--
--
--
--
--
--
+		AJUSTER LA BDD en fonction des besoins (ofc)
+
+-	Visualisation des comptes par le biais des liens en GET	
+-	NavBar
+-	Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes)
+-	Deconnexion (si il est pas implementer)
+-	Panel de modification de compte
+-	panel ADMIN
+-	Gestion des RANK (USER/ADMIN)
+-	Ajout du follow
+-	
 -
 -
 -
