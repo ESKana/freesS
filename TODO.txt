@@ -1,18 +1,19 @@
 		AJUSTER LA BDD en fonction des besoins (ofc)
 
 -		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
--	NavBar
+-		NavBar // pas trop mal
 -	Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes)
--	Deconnexion (si il est pas implementer)
+-		Deconnexion (si il est pas implementer) // faite
 -	Panel de modification de compte
--	panel ADMIN
+-	panel ADMIN via un bootstrap simple et efficaces
 -	Gestion des RANK (USER/ADMIN)
 -	Ajout du follow/unfolow
 -	Ajout de groupe (Privé/public)
 -	Ajout des infos de l'user
--	Gestion des MP
--	ajouter un THEME
--	
+-	Gestion des MP (ajout d'une table MP)
+-	Ecriture d'un message sur le profil d'un ami
+-		ajouter un THEME	//fait
+-	statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
 -
 -
 -

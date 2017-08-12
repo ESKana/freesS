@@ -3,6 +3,7 @@ include('config/autoload.php');
 if(!isset($_SESSION['id'])){
 	header('Location: index.php');
 }
+
 if(!isset($_GET['id'])){
 	// Si il n'y a pas de GET défini, on renvoie l'utilisateur sur home.php
 	header('Location: home.php');
