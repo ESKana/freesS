@@ -12,13 +12,15 @@ function register($db, $username, $password){
 		header('Location: index.php?msg=errorUserExist');
 	}
 	else{
+
 		// Si la fonction ne renvoie rien, c'est que l'utilisateur n'existe pas
 		// Comme l'utilisateur n'existe pas, on peut l'insérer en base de données
-		$insert = $db->prepare('INSERT INTO users (username, password, created_at, last_login) 
-			VALUES (:username, :password, :created_at, :last_login)');
+		$insert = $db->prepare('INSERT INTO users (username, password, rank, created_at, last_login) 
+			VALUES (:username, :password, :rank, :created_at, :last_login)');
 		$insert->execute(array(
 			':username'	=>	$username,
 			':password'	=>	sha1($password),
+			':rank'		=>	1,
 			':created_at'	=>	date('Y-m-d H:i:s'),
 			':last_login'	=>	date('Y-m-d H:i:s')
 		));

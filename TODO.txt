@@ -19,7 +19,7 @@
 +	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
 +	[DESIGN] travailler l'affichage des messages
 +	[PROFIL] Voire et modification du CV de l'utilisateur
--
++	[FEATURE] Amelioration du Register + Captcha
 -
 -
 -
