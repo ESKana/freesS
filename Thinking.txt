@@ -1,0 +1,39 @@
+Profil : 
+
+	CV :
+		Compétences
+		Projets
+		Groupe Actuel
+		
+
+	Groupe 
+
+
+
+Table - 
+		Profil : 
+			Id_Profil
+			id_user
+			id_Competence
+			
+		Competence :
+			id_Competence
+			competence
+
+		Hidden Service :
+			id_HS
+			url
+
+
+
+*-----------------------------------------------------*
+
+
+		Groupe : 
+			id_Groupe
+			groupe_name
+			id_user
+			rank
+			
+
+*------------------------------------------------------*
