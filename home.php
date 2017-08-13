@@ -31,11 +31,7 @@ include('navBar.php');
 					<h1  id="navbar">Twitter</h1>
 
 					<h2>Creer un nouveau tweet</h2>
-					<!--<form action="home.php" method="post">
-						<input type="text" name="tweet" placeholder="Votre tweet">
-						<input type="submit">
-						
-					</form>-->
+
 						<form 
 						class="navbar-form navbar-left" role="search" action="home.php" method="post">
 							<div class="form-group">
@@ -51,6 +47,8 @@ include('navBar.php');
 							echo '<div class="col-lg-8">';
 							echo'<div class="well bs-components">';
 							echo '<form class="form-vertical">';
+							$img = getUser($db, $tweet['author_id']);
+							echo "<img src='./assets/uploads/".$img['image']."'></img>";						
 							echo '	<fieldset>';
 							echo ' <label for="msg" class="col-lg-6 control-label">'.$tweet['tweet'].'</label>';
 							echo ' - <a href="profil.php?id=';

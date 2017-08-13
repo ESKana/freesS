@@ -127,3 +127,11 @@ function setImage($db, $userId, $file){
 		));
 	}
 }
+
+function getImage($db, $id){
+	$req = $db->prepare('SELECT image FROM users WHERE id =:id');
+	$req->execute(array(
+		'id'	=> $id
+		));
+	return $req->fetch();
+}
