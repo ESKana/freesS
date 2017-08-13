@@ -12,11 +12,10 @@ function register($db, $username, $password){
 		header('Location: index.php?msg=errorUserExist');
 	}
 	else{
-
 		// Si la fonction ne renvoie rien, c'est que l'utilisateur n'existe pas
 		// Comme l'utilisateur n'existe pas, on peut l'insérer en base de données
 		$insert = $db->prepare('INSERT INTO users (username, password, rank, created_at, last_login) 
-			VALUES (:username, :password, :rank, :created_at, :last_login)');
+			VALUES (:username, :password, :rank,:created_at, :last_login)');
 		$insert->execute(array(
 			':username'	=>	$username,
 			':password'	=>	sha1($password),
@@ -136,4 +135,48 @@ function getImage($db, $id){
 		'id'	=> $id
 		));
 	return $req->fetch();
+}
+
+function getIDfromUsername($db,$username){
+	
+	$req = $db->preapre('SELECT `username` FROM `users` WHERE username = :username');
+	$req->execute(array(
+		':username' => $username
+		));
+		return $req->fetch();	
+}
+
+function friend_request($db,$id_to){
+	
+	/*
+	on a qu'une table finalement pour les amis, avec le status, ça permet de tout faire d'un coup, connaitre l'etat de l'amitié en cours.
+	pas besoin d'ID normalement
+	
+	*/
+	
+	/*
+		rechercher dans la table FRIEND_REQUEST si l'invitation a déjà été demande, si OUI on n'afficheras pas le bouton avec un liens pour envoyé l'invitation.
+			et on checkeras egalement ici, pour eviter tout bug, et ne pas avoir 50fois la même request
+	*/
+	
+	/*	(condition pour chercher si l'entrée est present)*/
+	/* SI OUI, ne rien faire*/
+	/* SI NON, l'ecrire dans la table, friend_request en ecrivant l'entrée et en mettant un 0 dans la demande d'amitié*/
+	
+	/*
+	 0-> demande envoyé
+	 1-> demande refuser possibilitié de redemander une invitation
+	 2-> demande refuser plus possibilité de demander (user blocké *en gros*)
+	 3-> demande accepté	
+	*/
+	
+}
+
+function accept_request($db, $id_to){
+	
+	/*
+		Accepte la demande d'ami en midifiant le status en 3
+	*/
+	
+	
 }
