@@ -1,24 +1,24 @@
 		AJUSTER LA BDD en fonction des besoins (ofc)
 
 -		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
--		NavBar // pas trop mal
--	[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) / il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD
++		NavBar // pas trop mal
++	[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) / il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD
 -		Deconnexion // faite
--	[ADMIN] Panel de modification de compte
--	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
--	[ADMIN] Gestion des RANK (USER/ADMIN)
--	[FEATURE] Ajout du follow/unfolow
--	[FEATURE] Ajout de groupe (Privé/public)
--	[FEATURE] Ajout des infos de l'user
--	[FEATURE] Gestion des MP (ajout d'une table MP)
--	[FEATURE] Ecriture d'un message sur le profil d'un ami
++	[ADMIN] Panel de modification de compte
++	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
++	[ADMIN] Gestion des RANK (USER/ADMIN)
++	[FEATURE] Ajout du follow/unfolow
++	[FEATURE] Ajout de groupe (Privé/public)
++	[FEATURE] Ajout des infos de l'user
++	[FEATURE] Gestion des MP (ajout d'une table MP)
++	[FEATURE] Ecriture d'un message sur le profil d'un ami
 -		ajouter un THEME	//fait
--	[ADMIN] statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
--	[DESIGN] installer le theme sur toute les pages
--	[DESIGN] créer un patern de page avec le theme installer
--	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
--	[DESIGN] travailler l'affichage des messages
--	[PROFIL] Voire et modification du CV de l'utilisateur
++	[ADMIN] statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
++	[DESIGN] installer le theme sur toute les pages
++	[DESIGN] créer un patern de page avec le theme installer
++	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
++	[DESIGN] travailler l'affichage des messages
++	[PROFIL] Voire et modification du CV de l'utilisateur
 -
 -
 -
