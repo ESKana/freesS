@@ -2,23 +2,23 @@
 
 -		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
 -		NavBar // pas trop mal
--	Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) / il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD
+-	[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) / il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD
 -		Deconnexion // faite
--	Panel de modification de compte
--	panel ADMIN via un bootstrap simple et efficaces
--	Gestion des RANK (USER/ADMIN)
--	Ajout du follow/unfolow
--	Ajout de groupe (Privé/public)
--	Ajout des infos de l'user
--	Gestion des MP (ajout d'une table MP)
--	Ecriture d'un message sur le profil d'un ami
+-	[ADMIN] Panel de modification de compte
+-	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
+-	[ADMIN] Gestion des RANK (USER/ADMIN)
+-	[FEATURE] Ajout du follow/unfolow
+-	[FEATURE] Ajout de groupe (Privé/public)
+-	[FEATURE] Ajout des infos de l'user
+-	[FEATURE] Gestion des MP (ajout d'une table MP)
+-	[FEATURE] Ecriture d'un message sur le profil d'un ami
 -		ajouter un THEME	//fait
--	statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
--	installer le theme sur toute les pages
--	créer un patern de page avec le theme installer
--	modeler le theme comme il faut, creer les class de div comme voulu
--	travailler l'affichage des messages
--
+-	[ADMIN] statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
+-	[DESIGN] installer le theme sur toute les pages
+-	[DESIGN] créer un patern de page avec le theme installer
+-	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
+-	[DESIGN] travailler l'affichage des messages
+-	[PROFIL] Voire et modification du CV de l'utilisateur
 -
 -
 -
