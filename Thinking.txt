@@ -19,6 +19,7 @@ Table -
 		Competence :
 			id_Competence
 			competence
+			level (1-10) : on pourra afficher une sorte de barre de chargement pour que le niveau soit visuel d'un simple coup d'oeil
 
 		Hidden Service :
 			id_HS
