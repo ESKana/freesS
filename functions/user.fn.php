@@ -189,3 +189,21 @@ function accept_request($db, $id_to){
 	
 	
 }
+
+
+/************************************/
+
+function getURLfromUser($db,$username){
+	
+	$req = $db->prepare('SELECT `url`,`rank` FROM `url` WHERE username = :username');
+	$req->execute(array(
+		':username' => $username
+		));
+		return $req->fetch();	
+	
+	
+}
+
+/************************************/
+
+?>

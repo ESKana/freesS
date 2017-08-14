@@ -49,6 +49,14 @@ include('navBar.php');
 				<p>Nombre de tweets : <?php echo $nbTweets; ?></p>
 				<p>Creation du profil :  <?php echo date('d-m-Y H:i:s', strtotime($created_at)); ?></p>
 				<p>Derniere connexion :  <?php echo date('d-m-Y H:i:s', strtotime($last_login)); ?></p>
+				
+				<?php //
+
+				foreach(getURLfromUser($db,$username) as $url){
+					echo '<li>'.$url['url'].'RANK : '.$url['rank'].'</li>';
+				}
+				
+				?>
 
 				</div></div></div>
 				
