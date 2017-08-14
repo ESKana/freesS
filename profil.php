@@ -39,17 +39,29 @@ include('navBar.php');
 				<h1>Profil de : <?php echo $username; ?></h1>
 			
 				<?php $img = getUser($db, $id); echo "<img src='./assets/uploads/".$img['image']."'></img> </BR>";?>
+				<div class="col-lg-8">
+				<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel primary</h3>
+  </div>
+  <div class="panel-body">
 				<p>Nom d'utilisateur :  <?php echo $username; ?></p>
 				<p>Nombre de tweets : <?php echo $nbTweets; ?></p>
 				<p>Creation du profil :  <?php echo date('d-m-Y H:i:s', strtotime($created_at)); ?></p>
 				<p>Derniere connexion :  <?php echo date('d-m-Y H:i:s', strtotime($last_login)); ?></p>
 
+				</div></div></div>
 				
 				
-				<h1> Message de <?php echo $username; ?> </h1>
 				<div class="container">
-
-			<?php
+				<div class="col-lg-8">
+				
+				<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">MESSAGE :</h3>
+  </div>
+  <div class="panel-body">
+    			<?php
 /*
 
 la function : getTweetFromUser viens de tweet.fn, c'est pour que je l'ai ecrit, mais jme suis gourée dans l'algo,
@@ -60,9 +72,9 @@ l'idée est d'afficher tout les tweet du profil courant
 */
 
 
-
+					
 foreach(getTweetFromUser($db,$_user) AS $tweet){
-							echo '<div class="col-lg-8">';
+							
 							echo'<div class="well bs-components">';
 							echo '<form class="form-vertical">';
 							echo '	<fieldset>';
@@ -81,12 +93,17 @@ foreach(getTweetFromUser($db,$_user) AS $tweet){
 							echo '</fieldset>';
 							echo '</form>';
 							echo '</div>';
-							echo '</div>';
+							
 
 							
 						}
 ?>
-				</div>
+	</div>
+				
+  </div>
+</div>
+
+</div>
 				<div class="container"> 
 <?php
 
