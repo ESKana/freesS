@@ -2,7 +2,8 @@
 
 -		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
 +		NavBar // pas trop mal
-+	[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) / il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD
+-		[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) 
++	[DESIGN] il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD lors de l'upload de l'image pour eviter un affichage degueulasse
 -		Deconnexion // faite
 +	[ADMIN] Panel de modification de compte
 +	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
@@ -20,6 +21,9 @@
 +	[DESIGN] travailler l'affichage des messages
 +	[PROFIL] Voire et modification du CV de l'utilisateur
 +	[FEATURE] Amelioration du Register + Captcha
++	[FEATURE] Visualisation de info (table faite, il faudra rajouter les colonne des infos au fur et à mesure)
++	[DESIGN] mettre de la couleur au nom d'info (regarder dans le CSS tout est déjà pres)
++	[FEATURE] faire en sorte que l'on puisse Copy le contenu des infos sans probleme
 -
 -
 -
@@ -36,5 +40,15 @@
 -
 -
 -
--
--
+
+THEME POSSIBLE (telecharger le CSS):
+https://bootswatch.com/
+
+
+THEME ACTUEL :
+https://bootswatch.com/solar/
+https://bootswatch.com/solar/bootstrap.css
+
+THEME SYMPA :
+https://bootswatch.com/superhero/
+possibilité de modifier le theme pour avoir un theme NEON : https://bootswatch.com/darkly/

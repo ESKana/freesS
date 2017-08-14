@@ -37,12 +37,17 @@ include('navBar.php');
 					<div class="page-header">
 
 				<h1>Profil de : <?php echo $username; ?></h1>
-				<a href="home.php">Accueil</a>
+			
+				<?php $img = getUser($db, $id); echo "<img src='./assets/uploads/".$img['image']."'></img> </BR>";?>
 				<p>Nom d'utilisateur :  <?php echo $username; ?></p>
 				<p>Nombre de tweets : <?php echo $nbTweets; ?></p>
 				<p>Creation du profil :  <?php echo date('d-m-Y H:i:s', strtotime($created_at)); ?></p>
 				<p>Derniere connexion :  <?php echo date('d-m-Y H:i:s', strtotime($last_login)); ?></p>
 
+				
+				
+				<h1> Message de <?php echo $username; ?> </h1>
+				<div class="container">
 
 			<?php
 /*
@@ -53,6 +58,7 @@ donc à rectifier,
 l'idée est d'afficher tout les tweet du profil courant
 
 */
+
 
 
 foreach(getTweetFromUser($db,$_user) AS $tweet){
@@ -80,6 +86,50 @@ foreach(getTweetFromUser($db,$_user) AS $tweet){
 							
 						}
 ?>
+				</div>
+				<div class="container"> 
+<?php
+
+				/*echo '<div class="col-lg-8">';
+				echo '<fieldset>';
+				echo'<div class="well bs-components">';
+								
+				
+				echo '<h2> info : </h2>';
+				foreach(getInfoFromUser($db,$_user) AS $info){
+					
+					echo '<p> Jabber :'.$info['jabber'].'</p>';
+					echo '<p> PGP :'.$info['PGP'].'</p>';			//mettre de la couleur au nom d'info, et faire en sorte que l'on puisse Copy le contenu des infos sans probleme
+					
+							
+				}
+				
+				echo '</div>';
+				echo '</fieldset>';
+				echo '</div>';*/
+				
+				echo '<div class="col-lg-8">';
+				echo '<div class="panel panel-success">';
+  echo '<div class="panel-heading">';
+    echo '<h3 class="panel-title">INFO</h3>';
+  echo '</div>';
+  echo '<div class="panel-body">';
+    				foreach(getInfoFromUser($db,$_user) AS $info){
+					
+					echo '<p> Jabber :'.$info['jabber'].'</p>';
+					echo '<p> PGP :'.$info['PGP'].'</p>';			//mettre de la couleur au nom d'info, et faire en sorte que l'on puisse Copy le contenu des infos sans probleme
+					
+							
+				}
+  echo '</div>';
+echo '</div>';
+echo '</div>';
+				
+				
+				?>
+				</div>
+
+
 
 
 					</div>

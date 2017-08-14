@@ -59,7 +59,8 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./Profil.php">Profil</a></li>
+			
+            <li><a href="./Profil.php"><?=$_SESSION['username'];?></a></li>
             <li><a href="logout.php">Deconnexion</a></li>
           </ul>
 

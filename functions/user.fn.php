@@ -146,6 +146,15 @@ function getIDfromUsername($db,$username){
 		return $req->fetch();	
 }
 
+function getInfoFromUser($db, $user_id){
+	$req = $db->prepare('SELECT * FROM info WHERE id_user = :id');
+	$req->execute(array(
+		':id'	=>	$user_id
+	));
+	//return $req->fetch(); 
+	return $row = $req->fetchAll();
+}
+
 function friend_request($db,$id_to){
 	
 	/*
