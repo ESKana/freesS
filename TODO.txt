@@ -24,8 +24,8 @@
 +	[FEATURE] Visualisation de info (table faite, il faudra rajouter les colonne des infos au fur et à mesure)
 +	[DESIGN] mettre de la couleur au nom d'info (regarder dans le CSS tout est déjà pres)
 +	[FEATURE] faire en sorte que l'on puisse Copy le contenu des infos sans probleme
--
--
++	[FEATURE] fixer le probleme du foreach pour les info URL des user avec leur rank et ajouter le rank dans via une list dans l'edition des infos
++	[FEATURE] faire toutes les conditionnel pour chaque requet pour l'édition des info dans la DB pour eviter de tout ecraser
 -
 -
 -
