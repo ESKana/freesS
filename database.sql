@@ -1,60 +1,64 @@
-/*
- Navicat Premium Data Transfer
+-- phpMyAdmin SQL Dump
+-- version 4.3.11
+-- http://www.phpmyadmin.net
+--
+-- Client :  127.0.0.1
+-- Généré le :  Lun 14 Août 2017 à 17:39
+-- Version du serveur :  5.6.24
+-- Version de PHP :  5.6.8
 
- Source Server         : Localhost
- Source Server Type    : MySQL
- Source Server Version : 50622
- Source Host           : localhost
- Source Database       : webdesign_twitter
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
- Target Server Type    : MySQL
- Target Server Version : 50622
- File Encoding         : utf-8
 
-*/
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+--
+-- Base de données :  `webdesign_twitter`
+--
 
--- ----------------------------
---  Table structure for `tweets`
--- ----------------------------
-DROP TABLE IF EXISTS `tweets`;
-CREATE TABLE `tweets` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `tweet` text NOT NULL,
-  `author_id` int(10) NOT NULL,
-  `created_at` datetime NOT NULL,
-  PRIMARY KEY (`id`)
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `url`
+--
+
+CREATE TABLE IF NOT EXISTS `url` (
+  `id_url` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `rank` varchar(255) NOT NULL,
+  `id_user` int(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- ----------------------------
---  Records of `tweets`
--- ----------------------------
-BEGIN;
-INSERT INTO `tweets` VALUES ('1', 'Ceci est mon premier tweet', '1', '2015-01-01 00:00:00');
-COMMIT;
+--
+-- Contenu de la table `url`
+--
 
--- ----------------------------
---  Table structure for `users`
--- ----------------------------
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `rank` int DEFAULT NULL,
-  `last_login` datetime DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+INSERT INTO `url` (`id_url`, `url`, `rank`, `id_user`) VALUES
+(1, 'freeSocialaezrfgzrethj.onion', 'admin', 2);
 
--- ----------------------------
---  Records of `users`
--- ----------------------------
-BEGIN;
-INSERT INTO `users` VALUES ('1', 'Jeremy Bellaiche', 'mot_de_passe_crypte', 'image.png', '2015-01-01 00:00:00', '2015-01-01 00:00:00');
-COMMIT;
+--
+-- Index pour les tables exportées
+--
 
-SET FOREIGN_KEY_CHECKS = 1;
+--
+-- Index pour la table `url`
+--
+ALTER TABLE `url`
+  ADD PRIMARY KEY (`id_url`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `url`
+--
+ALTER TABLE `url`
+  MODIFY `id_url` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
