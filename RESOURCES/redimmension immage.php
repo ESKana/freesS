@@ -1,6 +1,7 @@
 <?php
 
 // il faudra redimensionner les images commes on le souhaite, mais de maniere lineaire pour ne pas la defformer
+// on pourra aussi si on le souhaite mettre ce code sous la forme d'une fonction pour que se soit plus simple
 
 // On récupère les dimensions de l'image
 $dimensions = getimagesize($_FILES['avatar']['tmp_name']);
