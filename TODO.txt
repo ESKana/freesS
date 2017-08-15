@@ -27,9 +27,9 @@
 +	[FEATURE] fixer le probleme du foreach pour les info URL des user avec leur rank et ajouter le rank dans via une list dans l'edition des infos
 +	[FEATURE] faire toutes les conditionnel pour chaque requet pour l'édition des info dans la DB pour eviter de tout ecraser
 +	[DESIGN] faire proprement la page de connexion
-+	[FEATURE] faire proprement la page register avec toutes les info necessaires et util
--
--
+-		[DESIGN] faire proprement la page register avec toutes les info necessaires et util
++	[FEATURE] dissocier LOGIN et USERNAME
++	[FEATURE] Ecrire dans la DB les données du register
 -
 -
 -
