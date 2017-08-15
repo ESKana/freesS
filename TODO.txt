@@ -31,7 +31,8 @@
 +	[FEATURE] dissocier LOGIN et USERNAME
 +	[FEATURE] Ecrire dans la DB les données du register
 +	[FEATURE] FORGOTTEN password => PIN or MAIL
--
++	[FEATURE] REGISTER : les competances proviendrons d'une lecture en BDD (on peu aussi ajouter par le biais de check box l'association d'autre compentance, le choix de la LISTE etant la compétance principal)
++	[FEATURE] capchat or something else
 -
 -
 -
