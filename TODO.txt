@@ -3,7 +3,7 @@
 -		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
 +		NavBar // pas trop mal
 -		[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) 
-+	[DESIGN] il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD lors de l'upload de l'image pour eviter un affichage degueulasse
++	[DESIGN] il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD lors de l'upload de l'image pour eviter un affichage degueulasse, (180*180 max). si l'image est trop grand il faut redimensionner l'image pour que le plus grand coté soit egal à 180px, et l'autre coter de maniere lineraire
 -		Deconnexion // faite
 +	[ADMIN] Panel de modification de compte
 +	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
@@ -26,8 +26,8 @@
 +	[FEATURE] faire en sorte que l'on puisse Copy le contenu des infos sans probleme
 +	[FEATURE] fixer le probleme du foreach pour les info URL des user avec leur rank et ajouter le rank dans via une list dans l'edition des infos
 +	[FEATURE] faire toutes les conditionnel pour chaque requet pour l'édition des info dans la DB pour eviter de tout ecraser
--
--
++	[DESIGN] faire proprement la page de connexion
++	[FEATURE] faire proprement la page register avec toutes les info necessaires et util
 -
 -
 -
