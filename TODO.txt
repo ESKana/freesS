@@ -20,7 +20,7 @@
 +	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
 +	[DESIGN] travailler l'affichage des messages
 +	[PROFIL] Voire et modification du CV de l'utilisateur
-+	[FEATURE] Amelioration du Register + Captcha
+-		[FEATURE] Amelioration du Register
 +	[FEATURE] Visualisation de info (table faite, il faudra rajouter les colonne des infos au fur et à mesure)
 +	[DESIGN] mettre de la couleur au nom d'info (regarder dans le CSS tout est déjà pres)
 +	[FEATURE] faire en sorte que l'on puisse Copy le contenu des infos sans probleme
