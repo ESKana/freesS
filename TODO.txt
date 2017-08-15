@@ -30,6 +30,7 @@
 -		[DESIGN] faire proprement la page register avec toutes les info necessaires et util
 +	[FEATURE] dissocier LOGIN et USERNAME
 +	[FEATURE] Ecrire dans la DB les données du register
++	[FEATURE] FORGOTTEN password => PIN or MAIL
 -
 -
 -
