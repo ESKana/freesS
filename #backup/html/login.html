@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+
+	<title>Twittor ı Connexion</title>
+	<meta name="description" content="Description of the new project">
+	
+	<!-- Libs -->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/libs/animate.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background-color: #2980b9;">
+	<section id="login-container">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 midway-horizontal midway-vertical fadeInDown animated">
+			<div id="logbox">
+				<h1><i class="fa fa-twitter"></i> Connectez-vous !</h1>
+				<form method="POST" action="login.php">
+					<div class="form-input">
+						<span class="email">
+							<input type="text" name="email" placeholder="Email">
+						</span>
+					</div>
+					<div class="form-input">
+						<span class="password">
+							<input type="password" name="password" placeholder="Password">
+						</span>
+					</div>
+					<div class="form-submit">
+						<input type="submit" value="Connecter">	
+					</div>
+					<p class="account">Vous n'avez pas de compte ? <a href="index.php">Inscrivez vous !</a></p>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Javascript Libs -->
+	<script src="js/libs/jquery-2.1.0.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/midway.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

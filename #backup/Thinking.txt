@@ -1,0 +1,40 @@
+Profil : 
+
+	CV :
+		Compétences
+		Projets
+		Groupe Actuel
+		
+
+	Groupe 
+
+
+
+Table - 
+		Profil : 
+			Id_Profil
+			id_user
+			id_Competence
+			
+		Competence :
+			id_Competence
+			competence
+			level (1-10) : on pourra afficher une sorte de barre de chargement pour que le niveau soit visuel d'un simple coup d'oeil
+
+		Hidden Service :
+			id_HS
+			url
+
+
+
+*-----------------------------------------------------*
+
+
+		Groupe : 
+			id_Groupe
+			groupe_name
+			id_user
+			rank
+			
+
+*------------------------------------------------------*
