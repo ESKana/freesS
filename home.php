@@ -25,10 +25,13 @@ include('navBar.php');
  ?>
 <body>
   <div class="bs-docs-section clearfix">
+  
         <div class="row">
 				<div class="container">
+				<a href="index.php"><h1 id="navbar">FreeSocial</h1></a>
 					<div class="page-header">
-					<h1  id="navbar">Twitter</h1>
+					<!-- <h1  id="navbar">Twitter</h1> -->
+					
 
 					<h2>Creer un nouveau tweet</h2>
 
@@ -48,7 +51,7 @@ include('navBar.php');
 							echo'<div class="well bs-components">';
 							echo '<form class="form-vertical">';
 							$img = getUser($db, $tweet['author_id']);
-							echo "<img src='./assets/uploads/".$img['image']."'></img>";						
+							echo "<img align='center' src='./assets/uploads/".$img['image']."'></img>";						
 							echo '	<fieldset>';
 							echo ' <label for="msg" class="col-lg-6 control-label">'.$tweet['tweet'].'</label>';
 							echo ' - <a href="profil.php?id=';

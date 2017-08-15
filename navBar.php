@@ -1,4 +1,6 @@
-    <div class="navbar navbar-default navbar-fixed-top">
+    <link rel="stylesheet" href="./stylesheet/custom.min.css">
+	
+	<div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <a href="./home.php" class="navbar-brand">FreeSocial</a>
