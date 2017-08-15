@@ -10,6 +10,7 @@ if(isset($_SESSION['id'])){
 	header('Location: home.php');
 }
 
+
 ?>
 
 <html>
@@ -24,13 +25,19 @@ if(isset($_SESSION['id'])){
 				<div class="container">
 					<div class="page-header">
 					
-<h1>FreeSocial</h1>
+<a href="index.php"><h1>FreeSocial</h1></a>
 
 <div class="col-lg-6">
 	<div class="well bs-components">
 
 
 <h2>Connexion</h2>
+<?php 
+if(isset($_GET['msg'])){
+	$msg= "ERROR BAD LOGIN OR PASSWORD";
+	?>
+<p><span class="label label-warning"><?php echo $msg; ?> </span><p>
+<?php } ?> 
 <form action="index.php" method="post">
 	<input type="text" name="username" placeholder="Nom d'utilisateur">
 	<input type="password" name="password" placeholder="Mot de passe">
