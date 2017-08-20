@@ -1,37 +1,37 @@
 		AJUSTER LA BDD en fonction des besoins (ofc)
 
--		Visualisation des comptes par le biais des liens en GET		// fait à voir si on modifie
+-		Visualisation des comptes par le biais des liens en GET		// fait Ã  voir si on modifie
 +		NavBar // pas trop mal
--		[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc où tu vois les message des tes potes) 
-+	[DESIGN] il faut redimenssionner l'image si elle est trop grande, on peut faire ça avec GD lors de l'upload de l'image pour eviter un affichage degueulasse, (180*180 max). si l'image est trop grand il faut redimensionner l'image pour que le plus grand coté soit egal à 180px, et l'autre coter de maniere lineraire
+-		[DESIGN] Vue de l'AVATAR dans le compte et dans le thread AMITIER (je sais pas comment l'appeller le truc oÃ¹ tu vois les message des tes potes) 
++	[DESIGN] il faut redimenssionner l'image si elle est trop grande, on peut faire Ã§a avec GD lors de l'upload de l'image pour eviter un affichage degueulasse, (180*180 max). si l'image est trop grand il faut redimensionner l'image pour que le plus grand cotÃ© soit egal Ã  180px, et l'autre coter de maniere lineraire
 -		Deconnexion // faite
 +	[ADMIN] Panel de modification de compte
 +	[ADMIN] panel ADMIN via un bootstrap simple et efficaces
 +	[ADMIN] Gestion des RANK (USER/ADMIN)
 +	[FEATURE] Ajout du follow/unfolow
-+	[FEATURE] Ajout de groupe (Privé/public)
++	[FEATURE] Ajout de groupe (PrivÃ©/public)
 +	[FEATURE] Ajout des infos de l'user
 +	[FEATURE] Gestion des MP (ajout d'une table MP)
 +	[FEATURE] Ecriture d'un message sur le profil d'un ami
 -		ajouter un THEME	//fait
 +	[ADMIN] statistique des user (nb connexion, nb message, nb creation de compte) via un graphique
 +	[DESIGN] installer le theme sur toute les pages
-+	[DESIGN] créer un patern de page avec le theme installer
+-		[DESIGN] crÃ©er un patern de page avec le theme installÃ©
 +	[DESIGN] modeler le theme comme il faut, creer les class de div comme voulu
 +	[DESIGN] travailler l'affichage des messages
 +	[PROFIL] Voire et modification du CV de l'utilisateur
 -		[FEATURE] Amelioration du Register
-+	[FEATURE] Visualisation de info (table faite, il faudra rajouter les colonne des infos au fur et à mesure)
-+	[DESIGN] mettre de la couleur au nom d'info (regarder dans le CSS tout est déjà pres)
++	[FEATURE] Visualisation de info (table faite, il faudra rajouter les colonne des infos au fur et Ã  mesure)
+-		[DESIGN] mettre de la couleur au nom d'info (regarder dans le CSS tout est dÃ©jÃ  pres)
 +	[FEATURE] faire en sorte que l'on puisse Copy le contenu des infos sans probleme
-+	[FEATURE] fixer le probleme du foreach pour les info URL des user avec leur rank et ajouter le rank dans via une list dans l'edition des infos
-+	[FEATURE] faire toutes les conditionnel pour chaque requet pour l'édition des info dans la DB pour eviter de tout ecraser
++	[FEATURE] fixer le probleme du foreach pour les info URL des users avec leur rank et ajouter le rank dans via une list dans l'edition des infos
++	[FEATURE] faire toutes les conditionnelles pour chaque requet pour l'Ã©dition des info dans la DB pour eviter de tout ecraser
 +	[DESIGN] faire proprement la page de connexion
 -		[DESIGN] faire proprement la page register avec toutes les info necessaires et util
 +	[FEATURE] dissocier LOGIN et USERNAME
-+	[FEATURE] Ecrire dans la DB les données du register
++	[FEATURE] Ecrire dans la DB les donnÃ©es du register
 +	[FEATURE] FORGOTTEN password => PIN or MAIL
-+	[FEATURE] REGISTER : les competances proviendrons d'une lecture en BDD (on peu aussi ajouter par le biais de check box l'association d'autre compentance, le choix de la LISTE etant la compétance principal)
++	[FEATURE] REGISTER : les competances proviendrons d'une lecture en BDD (on peu aussi ajouter par le biais de check box l'association d'autre compentance, le choix de la LISTE etant la compÃ©tance principal)
 +	[FEATURE] capchat or something else
 -
 -
@@ -53,4 +53,4 @@ https://bootswatch.com/solar/bootstrap.css
 
 THEME SYMPA :
 https://bootswatch.com/superhero/
-possibilité de modifier le theme pour avoir un theme NEON : https://bootswatch.com/darkly/
+possibilitÃ© de modifier le theme pour avoir un theme NEON : https://bootswatch.com/darkly/
